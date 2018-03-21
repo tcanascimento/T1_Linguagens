@@ -1,0 +1,24 @@
+grammar org.xtext.example.mydsl.T1 with org.eclipse.xtext.common.Terminals
+
+generate t1 "http://www.xtext.org/example/mydsl/T1"
+
+Model:
+	vars+=Var*;
+
+Name:
+	ID
+;
+
+Value:
+	ID | STRING | INT| INT? '.' INT*
+;
+
+Attribution:
+	('=' Value)*
+;
+
+Declaration:
+	Name Attribution
+;
+Var:
+	'var' declarations+=Declaration(',' declarations+=Declaration)*(';')?;

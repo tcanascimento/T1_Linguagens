@@ -1,0 +1,93 @@
+<idea-plugin version="2">
+	<extensions defaultExtensionNs="org.eclipse.xtext.idea">
+		<package
+			uri="http://www.xtext.org/example/mydsl/T1"
+			class="org.xtext.example.mydsl.t1.T1Package"
+		/>
+		<resourceFactory 
+			type="mydsl"
+			class="org.eclipse.xtext.resource.IResourceFactory"
+			factoryClass="org.xtext.example.mydsl.idea.T1ExtensionFactory"
+		/>
+		<resourceServiceProvider
+			uriExtension="mydsl"
+			class="org.eclipse.xtext.idea.resource.IResourceIdeaServiceProvider"
+			factoryClass="org.xtext.example.mydsl.idea.T1ExtensionFactory"
+		/>
+
+		<lang.setup
+			language="org.xtext.example.mydsl.T1"
+			implementationClass="org.xtext.example.mydsl.idea.T1IdeaSetup"
+		/>
+	</extensions>
+
+	<extensions defaultExtensionNs="com.intellij">
+		<psi.treeChangePreprocessor implementation="org.xtext.example.mydsl.idea.lang.psi.T1CodeBlockModificationListener"/>
+
+		<fileTypeFactory implementation="org.xtext.example.mydsl.idea.lang.T1FileTypeFactory"/>
+		<stubElementTypeHolder class="org.xtext.example.mydsl.idea.lang.T1ElementTypeProvider"/>
+		<lang.ast.factory 
+			language="org.xtext.example.mydsl.T1"
+			factoryClass="org.xtext.example.mydsl.idea.T1ExtensionFactory"
+			implementationClass="org.eclipse.xtext.idea.lang.BaseXtextASTFactory"
+		/>
+		<lang.parserDefinition 
+			language="org.xtext.example.mydsl.T1"
+			factoryClass="org.xtext.example.mydsl.idea.T1ExtensionFactory"
+			implementationClass="org.xtext.example.mydsl.idea.lang.parser.T1ParserDefinition"
+		/>
+		<lang.findUsagesProvider 
+			language="org.xtext.example.mydsl.T1"
+			factoryClass="org.xtext.example.mydsl.idea.T1ExtensionFactory"
+			implementationClass="org.eclipse.xtext.idea.findusages.BaseXtextFindUsageProvider"
+		/>
+		<lang.refactoringSupport 
+			language="org.xtext.example.mydsl.T1"
+			factoryClass="org.xtext.example.mydsl.idea.T1ExtensionFactory"
+			implementationClass="org.eclipse.xtext.idea.refactoring.BaseXtextRefactoringSupportProvider"
+		/>
+		<lang.namesValidator 
+			language="org.xtext.example.mydsl.T1"
+			factoryClass="org.xtext.example.mydsl.idea.T1ExtensionFactory"
+			implementationClass="com.intellij.lang.refactoring.NamesValidator"
+		/>
+		<lang.syntaxHighlighterFactory key="org.xtext.example.mydsl.T1" implementationClass="org.xtext.example.mydsl.idea.highlighting.T1SyntaxHighlighterFactory" />
+		<lang.braceMatcher 
+			language="org.xtext.example.mydsl.T1"
+			factoryClass="org.xtext.example.mydsl.idea.T1ExtensionFactory"
+			implementationClass="com.intellij.lang.PairedBraceMatcher"
+		/>
+		<annotator 
+			language="org.xtext.example.mydsl.T1"
+			factoryClass="org.xtext.example.mydsl.idea.T1ExtensionFactory"
+			implementationClass="org.eclipse.xtext.idea.annotation.IssueAnnotator"
+		/>
+		<completion.contributor language="org.xtext.example.mydsl.T1" implementationClass="org.xtext.example.mydsl.idea.completion.T1CompletionContributor"/>
+		<pom.declarationSearcher implementation="org.xtext.example.mydsl.idea.lang.pom.T1PomDeclarationSearcher"/>
+
+		<lang.psiStructureViewFactory 
+			language="org.xtext.example.mydsl.T1"
+			factoryClass="org.xtext.example.mydsl.idea.T1ExtensionFactory"
+			implementationClass="com.intellij.lang.PsiStructureViewFactory"
+		/>
+		<facetType implementation="org.xtext.example.mydsl.idea.facet.T1FacetType"/>
+		<lang.documentationProvider 
+			language="org.xtext.example.mydsl.T1"
+			factoryClass="org.xtext.example.mydsl.idea.T1ExtensionFactory"
+			implementationClass="org.eclipse.xtext.idea.documentation.IdeaDocumentationProvider"
+		/>
+		<colorSettingsPage implementation="org.xtext.example.mydsl.idea.highlighting.T1ColorSettingsPage"/>
+		<highlightVisitor implementation="org.xtext.example.mydsl.idea.highlighting.T1SemanticHighlightVisitor"/>
+
+		<lang.formatter 
+			language="org.xtext.example.mydsl.T1"
+			factoryClass="org.xtext.example.mydsl.idea.T1ExtensionFactory"
+			implementationClass="com.intellij.formatting.FormattingModelBuilder"
+		/>
+		<lang.commenter 
+			language="org.xtext.example.mydsl.T1"
+			factoryClass="org.xtext.example.mydsl.idea.T1ExtensionFactory"
+			implementationClass="com.intellij.lang.CodeDocumentationAwareCommenter"
+		/>
+	</extensions>
+</idea-plugin>
