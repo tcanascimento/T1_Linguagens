@@ -40,6 +40,10 @@ public class T1Parser extends AbstractContentAssistParser {
 					put(grammarAccess.getValueAccess().getGroup_8(), "rule__Value__Group_8__0");
 					put(grammarAccess.getValueAccess().getGroup_9(), "rule__Value__Group_9__0");
 					put(grammarAccess.getValueAccess().getGroup_10(), "rule__Value__Group_10__0");
+					put(grammarAccess.getValueAccess().getGroup_11(), "rule__Value__Group_11__0");
+					put(grammarAccess.getValueAccess().getGroup_12(), "rule__Value__Group_12__0");
+					put(grammarAccess.getValueAccess().getGroup_13(), "rule__Value__Group_13__0");
+					put(grammarAccess.getValueAccess().getGroup_14(), "rule__Value__Group_14__0");
 					put(grammarAccess.getAttributionAccess().getGroup(), "rule__Attribution__Group__0");
 					put(grammarAccess.getDeclarationAccess().getGroup(), "rule__Declaration__Group__0");
 					put(grammarAccess.getVarAccess().getGroup(), "rule__Var__Group__0");

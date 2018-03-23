@@ -51,6 +51,20 @@ public class T1ParsingTest {
   }
   
   @Test
+  public void validaAtribuicaoComNegacaoESubtracaoFloat() {
+    try {
+      StringConcatenation _builder = new StringConcatenation();
+      _builder.append("var a = -1 - 3.2121;");
+      _builder.newLine();
+      final Model result = this.parseHelper.parse(_builder);
+      Assert.assertNotNull(result);
+      Assert.assertTrue(result.eResource().getErrors().isEmpty());
+    } catch (Throwable _e) {
+      throw Exceptions.sneakyThrow(_e);
+    }
+  }
+  
+  @Test
   public void validaAtribuicaoComSoma() {
     try {
       StringConcatenation _builder = new StringConcatenation();

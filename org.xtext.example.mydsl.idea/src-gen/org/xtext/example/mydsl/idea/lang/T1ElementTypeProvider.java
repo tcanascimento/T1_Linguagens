@@ -188,6 +188,63 @@ public class T1ElementTypeProvider implements IElementTypeProvider {
 		public static IGrammarAwareElementType createValue_INTTerminalRuleCall_10_4ElementType() {
 			return new IGrammarAwareElementType("Value_INTTerminalRuleCall_10_4_ELEMENT_TYPE", T1Language.INSTANCE, GRAMMAR_ACCESS.getValueAccess().getINTTerminalRuleCall_10_4());
 		}
+		public static IGrammarAwareElementType createValue_Group_11ElementType() {
+			return new IGrammarAwareElementType("Value_Group_11_ELEMENT_TYPE", T1Language.INSTANCE, GRAMMAR_ACCESS.getValueAccess().getGroup_11());
+		}
+		public static IGrammarAwareElementType createValue_HyphenMinusKeyword_11_0ElementType() {
+			return new IGrammarAwareElementType("Value_HyphenMinusKeyword_11_0_ELEMENT_TYPE", T1Language.INSTANCE, GRAMMAR_ACCESS.getValueAccess().getHyphenMinusKeyword_11_0());
+		}
+		public static IGrammarAwareElementType createValue_INTTerminalRuleCall_11_1ElementType() {
+			return new IGrammarAwareElementType("Value_INTTerminalRuleCall_11_1_ELEMENT_TYPE", T1Language.INSTANCE, GRAMMAR_ACCESS.getValueAccess().getINTTerminalRuleCall_11_1());
+		}
+		public static IGrammarAwareElementType createValue_Group_12ElementType() {
+			return new IGrammarAwareElementType("Value_Group_12_ELEMENT_TYPE", T1Language.INSTANCE, GRAMMAR_ACCESS.getValueAccess().getGroup_12());
+		}
+		public static IGrammarAwareElementType createValue_HyphenMinusKeyword_12_0ElementType() {
+			return new IGrammarAwareElementType("Value_HyphenMinusKeyword_12_0_ELEMENT_TYPE", T1Language.INSTANCE, GRAMMAR_ACCESS.getValueAccess().getHyphenMinusKeyword_12_0());
+		}
+		public static IGrammarAwareElementType createValue_INTTerminalRuleCall_12_1ElementType() {
+			return new IGrammarAwareElementType("Value_INTTerminalRuleCall_12_1_ELEMENT_TYPE", T1Language.INSTANCE, GRAMMAR_ACCESS.getValueAccess().getINTTerminalRuleCall_12_1());
+		}
+		public static IGrammarAwareElementType createValue_Group_13ElementType() {
+			return new IGrammarAwareElementType("Value_Group_13_ELEMENT_TYPE", T1Language.INSTANCE, GRAMMAR_ACCESS.getValueAccess().getGroup_13());
+		}
+		public static IGrammarAwareElementType createValue_HyphenMinusKeyword_13_0ElementType() {
+			return new IGrammarAwareElementType("Value_HyphenMinusKeyword_13_0_ELEMENT_TYPE", T1Language.INSTANCE, GRAMMAR_ACCESS.getValueAccess().getHyphenMinusKeyword_13_0());
+		}
+		public static IGrammarAwareElementType createValue_INTTerminalRuleCall_13_1ElementType() {
+			return new IGrammarAwareElementType("Value_INTTerminalRuleCall_13_1_ELEMENT_TYPE", T1Language.INSTANCE, GRAMMAR_ACCESS.getValueAccess().getINTTerminalRuleCall_13_1());
+		}
+		public static IGrammarAwareElementType createValue_PlusSignKeyword_13_2ElementType() {
+			return new IGrammarAwareElementType("Value_PlusSignKeyword_13_2_ELEMENT_TYPE", T1Language.INSTANCE, GRAMMAR_ACCESS.getValueAccess().getPlusSignKeyword_13_2());
+		}
+		public static IGrammarAwareElementType createValue_FullStopKeyword_13_3ElementType() {
+			return new IGrammarAwareElementType("Value_FullStopKeyword_13_3_ELEMENT_TYPE", T1Language.INSTANCE, GRAMMAR_ACCESS.getValueAccess().getFullStopKeyword_13_3());
+		}
+		public static IGrammarAwareElementType createValue_INTTerminalRuleCall_13_4ElementType() {
+			return new IGrammarAwareElementType("Value_INTTerminalRuleCall_13_4_ELEMENT_TYPE", T1Language.INSTANCE, GRAMMAR_ACCESS.getValueAccess().getINTTerminalRuleCall_13_4());
+		}
+		public static IGrammarAwareElementType createValue_Group_14ElementType() {
+			return new IGrammarAwareElementType("Value_Group_14_ELEMENT_TYPE", T1Language.INSTANCE, GRAMMAR_ACCESS.getValueAccess().getGroup_14());
+		}
+		public static IGrammarAwareElementType createValue_HyphenMinusKeyword_14_0ElementType() {
+			return new IGrammarAwareElementType("Value_HyphenMinusKeyword_14_0_ELEMENT_TYPE", T1Language.INSTANCE, GRAMMAR_ACCESS.getValueAccess().getHyphenMinusKeyword_14_0());
+		}
+		public static IGrammarAwareElementType createValue_INTTerminalRuleCall_14_1ElementType() {
+			return new IGrammarAwareElementType("Value_INTTerminalRuleCall_14_1_ELEMENT_TYPE", T1Language.INSTANCE, GRAMMAR_ACCESS.getValueAccess().getINTTerminalRuleCall_14_1());
+		}
+		public static IGrammarAwareElementType createValue_HyphenMinusKeyword_14_2ElementType() {
+			return new IGrammarAwareElementType("Value_HyphenMinusKeyword_14_2_ELEMENT_TYPE", T1Language.INSTANCE, GRAMMAR_ACCESS.getValueAccess().getHyphenMinusKeyword_14_2());
+		}
+		public static IGrammarAwareElementType createValue_INTTerminalRuleCall_14_3ElementType() {
+			return new IGrammarAwareElementType("Value_INTTerminalRuleCall_14_3_ELEMENT_TYPE", T1Language.INSTANCE, GRAMMAR_ACCESS.getValueAccess().getINTTerminalRuleCall_14_3());
+		}
+		public static IGrammarAwareElementType createValue_FullStopKeyword_14_4ElementType() {
+			return new IGrammarAwareElementType("Value_FullStopKeyword_14_4_ELEMENT_TYPE", T1Language.INSTANCE, GRAMMAR_ACCESS.getValueAccess().getFullStopKeyword_14_4());
+		}
+		public static IGrammarAwareElementType createValue_INTTerminalRuleCall_14_5ElementType() {
+			return new IGrammarAwareElementType("Value_INTTerminalRuleCall_14_5_ELEMENT_TYPE", T1Language.INSTANCE, GRAMMAR_ACCESS.getValueAccess().getINTTerminalRuleCall_14_5());
+		}
 	}
 
 	public static final IGrammarAwareElementType Value_ELEMENT_TYPE = associate(ValueFactory.createValueElementType());
@@ -275,6 +332,44 @@ public class T1ElementTypeProvider implements IElementTypeProvider {
 	public static final IGrammarAwareElementType Value_PlusSignKeyword_10_3_ELEMENT_TYPE = associate(ValueFactory.createValue_PlusSignKeyword_10_3ElementType());
 
 	public static final IGrammarAwareElementType Value_INTTerminalRuleCall_10_4_ELEMENT_TYPE = associate(ValueFactory.createValue_INTTerminalRuleCall_10_4ElementType());
+
+	public static final IGrammarAwareElementType Value_Group_11_ELEMENT_TYPE = associate(ValueFactory.createValue_Group_11ElementType());
+
+	public static final IGrammarAwareElementType Value_HyphenMinusKeyword_11_0_ELEMENT_TYPE = associate(ValueFactory.createValue_HyphenMinusKeyword_11_0ElementType());
+
+	public static final IGrammarAwareElementType Value_INTTerminalRuleCall_11_1_ELEMENT_TYPE = associate(ValueFactory.createValue_INTTerminalRuleCall_11_1ElementType());
+
+	public static final IGrammarAwareElementType Value_Group_12_ELEMENT_TYPE = associate(ValueFactory.createValue_Group_12ElementType());
+
+	public static final IGrammarAwareElementType Value_HyphenMinusKeyword_12_0_ELEMENT_TYPE = associate(ValueFactory.createValue_HyphenMinusKeyword_12_0ElementType());
+
+	public static final IGrammarAwareElementType Value_INTTerminalRuleCall_12_1_ELEMENT_TYPE = associate(ValueFactory.createValue_INTTerminalRuleCall_12_1ElementType());
+
+	public static final IGrammarAwareElementType Value_Group_13_ELEMENT_TYPE = associate(ValueFactory.createValue_Group_13ElementType());
+
+	public static final IGrammarAwareElementType Value_HyphenMinusKeyword_13_0_ELEMENT_TYPE = associate(ValueFactory.createValue_HyphenMinusKeyword_13_0ElementType());
+
+	public static final IGrammarAwareElementType Value_INTTerminalRuleCall_13_1_ELEMENT_TYPE = associate(ValueFactory.createValue_INTTerminalRuleCall_13_1ElementType());
+
+	public static final IGrammarAwareElementType Value_PlusSignKeyword_13_2_ELEMENT_TYPE = associate(ValueFactory.createValue_PlusSignKeyword_13_2ElementType());
+
+	public static final IGrammarAwareElementType Value_FullStopKeyword_13_3_ELEMENT_TYPE = associate(ValueFactory.createValue_FullStopKeyword_13_3ElementType());
+
+	public static final IGrammarAwareElementType Value_INTTerminalRuleCall_13_4_ELEMENT_TYPE = associate(ValueFactory.createValue_INTTerminalRuleCall_13_4ElementType());
+
+	public static final IGrammarAwareElementType Value_Group_14_ELEMENT_TYPE = associate(ValueFactory.createValue_Group_14ElementType());
+
+	public static final IGrammarAwareElementType Value_HyphenMinusKeyword_14_0_ELEMENT_TYPE = associate(ValueFactory.createValue_HyphenMinusKeyword_14_0ElementType());
+
+	public static final IGrammarAwareElementType Value_INTTerminalRuleCall_14_1_ELEMENT_TYPE = associate(ValueFactory.createValue_INTTerminalRuleCall_14_1ElementType());
+
+	public static final IGrammarAwareElementType Value_HyphenMinusKeyword_14_2_ELEMENT_TYPE = associate(ValueFactory.createValue_HyphenMinusKeyword_14_2ElementType());
+
+	public static final IGrammarAwareElementType Value_INTTerminalRuleCall_14_3_ELEMENT_TYPE = associate(ValueFactory.createValue_INTTerminalRuleCall_14_3ElementType());
+
+	public static final IGrammarAwareElementType Value_FullStopKeyword_14_4_ELEMENT_TYPE = associate(ValueFactory.createValue_FullStopKeyword_14_4ElementType());
+
+	public static final IGrammarAwareElementType Value_INTTerminalRuleCall_14_5_ELEMENT_TYPE = associate(ValueFactory.createValue_INTTerminalRuleCall_14_5ElementType());
 
 	private static class AttributionFactory {
 		public static IGrammarAwareElementType createAttributionElementType() {
@@ -575,6 +670,82 @@ public class T1ElementTypeProvider implements IElementTypeProvider {
 	
 	public IGrammarAwareElementType getValue_INTTerminalRuleCall_10_4ElementType() {
 		return Value_INTTerminalRuleCall_10_4_ELEMENT_TYPE;
+	}
+	
+	public IGrammarAwareElementType getValue_Group_11ElementType() {
+		return Value_Group_11_ELEMENT_TYPE;
+	}
+	
+	public IGrammarAwareElementType getValue_HyphenMinusKeyword_11_0ElementType() {
+		return Value_HyphenMinusKeyword_11_0_ELEMENT_TYPE;
+	}
+	
+	public IGrammarAwareElementType getValue_INTTerminalRuleCall_11_1ElementType() {
+		return Value_INTTerminalRuleCall_11_1_ELEMENT_TYPE;
+	}
+	
+	public IGrammarAwareElementType getValue_Group_12ElementType() {
+		return Value_Group_12_ELEMENT_TYPE;
+	}
+	
+	public IGrammarAwareElementType getValue_HyphenMinusKeyword_12_0ElementType() {
+		return Value_HyphenMinusKeyword_12_0_ELEMENT_TYPE;
+	}
+	
+	public IGrammarAwareElementType getValue_INTTerminalRuleCall_12_1ElementType() {
+		return Value_INTTerminalRuleCall_12_1_ELEMENT_TYPE;
+	}
+	
+	public IGrammarAwareElementType getValue_Group_13ElementType() {
+		return Value_Group_13_ELEMENT_TYPE;
+	}
+	
+	public IGrammarAwareElementType getValue_HyphenMinusKeyword_13_0ElementType() {
+		return Value_HyphenMinusKeyword_13_0_ELEMENT_TYPE;
+	}
+	
+	public IGrammarAwareElementType getValue_INTTerminalRuleCall_13_1ElementType() {
+		return Value_INTTerminalRuleCall_13_1_ELEMENT_TYPE;
+	}
+	
+	public IGrammarAwareElementType getValue_PlusSignKeyword_13_2ElementType() {
+		return Value_PlusSignKeyword_13_2_ELEMENT_TYPE;
+	}
+	
+	public IGrammarAwareElementType getValue_FullStopKeyword_13_3ElementType() {
+		return Value_FullStopKeyword_13_3_ELEMENT_TYPE;
+	}
+	
+	public IGrammarAwareElementType getValue_INTTerminalRuleCall_13_4ElementType() {
+		return Value_INTTerminalRuleCall_13_4_ELEMENT_TYPE;
+	}
+	
+	public IGrammarAwareElementType getValue_Group_14ElementType() {
+		return Value_Group_14_ELEMENT_TYPE;
+	}
+	
+	public IGrammarAwareElementType getValue_HyphenMinusKeyword_14_0ElementType() {
+		return Value_HyphenMinusKeyword_14_0_ELEMENT_TYPE;
+	}
+	
+	public IGrammarAwareElementType getValue_INTTerminalRuleCall_14_1ElementType() {
+		return Value_INTTerminalRuleCall_14_1_ELEMENT_TYPE;
+	}
+	
+	public IGrammarAwareElementType getValue_HyphenMinusKeyword_14_2ElementType() {
+		return Value_HyphenMinusKeyword_14_2_ELEMENT_TYPE;
+	}
+	
+	public IGrammarAwareElementType getValue_INTTerminalRuleCall_14_3ElementType() {
+		return Value_INTTerminalRuleCall_14_3_ELEMENT_TYPE;
+	}
+	
+	public IGrammarAwareElementType getValue_FullStopKeyword_14_4ElementType() {
+		return Value_FullStopKeyword_14_4_ELEMENT_TYPE;
+	}
+	
+	public IGrammarAwareElementType getValue_INTTerminalRuleCall_14_5ElementType() {
+		return Value_INTTerminalRuleCall_14_5_ELEMENT_TYPE;
 	}
 	
 	public IGrammarAwareElementType getAttributionElementType() {

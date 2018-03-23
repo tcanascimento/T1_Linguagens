@@ -37,6 +37,15 @@ class T1ParsingTest {
 	}
 	
 	@Test
+	def void validaAtribuicaoComNegacaoESubtracaoFloat() {
+		val result = parseHelper.parse('''
+			var a = -1 - 3.2121;
+		''')
+		Assert.assertNotNull(result)
+		Assert.assertTrue(result.eResource.errors.isEmpty)
+	}
+	
+	@Test
 	def void validaAtribuicaoComSoma() {
 		val result = parseHelper.parse('''
 			var a = 1 + 2;

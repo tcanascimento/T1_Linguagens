@@ -92,14 +92,35 @@ public class T1GrammarAccess extends AbstractGrammarElementFinder {
 		private final RuleCall cINTTerminalRuleCall_10_2 = (RuleCall)cGroup_10.eContents().get(2);
 		private final Keyword cPlusSignKeyword_10_3 = (Keyword)cGroup_10.eContents().get(3);
 		private final RuleCall cINTTerminalRuleCall_10_4 = (RuleCall)cGroup_10.eContents().get(4);
+		private final Group cGroup_11 = (Group)cAlternatives.eContents().get(11);
+		private final Keyword cHyphenMinusKeyword_11_0 = (Keyword)cGroup_11.eContents().get(0);
+		private final RuleCall cINTTerminalRuleCall_11_1 = (RuleCall)cGroup_11.eContents().get(1);
+		private final Group cGroup_12 = (Group)cAlternatives.eContents().get(12);
+		private final Keyword cHyphenMinusKeyword_12_0 = (Keyword)cGroup_12.eContents().get(0);
+		private final RuleCall cINTTerminalRuleCall_12_1 = (RuleCall)cGroup_12.eContents().get(1);
+		private final Group cGroup_13 = (Group)cAlternatives.eContents().get(13);
+		private final Keyword cHyphenMinusKeyword_13_0 = (Keyword)cGroup_13.eContents().get(0);
+		private final RuleCall cINTTerminalRuleCall_13_1 = (RuleCall)cGroup_13.eContents().get(1);
+		private final Keyword cPlusSignKeyword_13_2 = (Keyword)cGroup_13.eContents().get(2);
+		private final Keyword cFullStopKeyword_13_3 = (Keyword)cGroup_13.eContents().get(3);
+		private final RuleCall cINTTerminalRuleCall_13_4 = (RuleCall)cGroup_13.eContents().get(4);
+		private final Group cGroup_14 = (Group)cAlternatives.eContents().get(14);
+		private final Keyword cHyphenMinusKeyword_14_0 = (Keyword)cGroup_14.eContents().get(0);
+		private final RuleCall cINTTerminalRuleCall_14_1 = (RuleCall)cGroup_14.eContents().get(1);
+		private final Keyword cHyphenMinusKeyword_14_2 = (Keyword)cGroup_14.eContents().get(2);
+		private final RuleCall cINTTerminalRuleCall_14_3 = (RuleCall)cGroup_14.eContents().get(3);
+		private final Keyword cFullStopKeyword_14_4 = (Keyword)cGroup_14.eContents().get(4);
+		private final RuleCall cINTTerminalRuleCall_14_5 = (RuleCall)cGroup_14.eContents().get(5);
 		
 		//Value:
 		//	ID | STRING | INT | INT? '.' INT* | INT '+' INT | INT '+' INT? '.' INT* | INT '+' INT* | INT '-' INT | INT '-' INT?
-		//	'.' INT* | INT '-' INT* | INT? '.' INT* '+' INT;
+		//	'.' INT* | INT '-' INT* | INT? '.' INT* '+' INT | '-' INT* | ('-' INT)* | '-' INT* '+' '.'? INT* | '-' INT '-' INT?
+		//	'.' INT*;
 		@Override public ParserRule getRule() { return rule; }
 		
 		//ID | STRING | INT | INT? '.' INT* | INT '+' INT | INT '+' INT? '.' INT* | INT '+' INT* | INT '-' INT | INT '-' INT? '.'
-		//INT* | INT '-' INT* | INT? '.' INT* '+' INT
+		//INT* | INT '-' INT* | INT? '.' INT* '+' INT | '-' INT* | ('-' INT)* | '-' INT* '+' '.'? INT* | '-' INT '-' INT? '.'
+		//INT*
 		public Alternatives getAlternatives() { return cAlternatives; }
 		
 		//ID
@@ -224,6 +245,63 @@ public class T1GrammarAccess extends AbstractGrammarElementFinder {
 		
 		//INT
 		public RuleCall getINTTerminalRuleCall_10_4() { return cINTTerminalRuleCall_10_4; }
+		
+		//'-' INT*
+		public Group getGroup_11() { return cGroup_11; }
+		
+		//'-'
+		public Keyword getHyphenMinusKeyword_11_0() { return cHyphenMinusKeyword_11_0; }
+		
+		//INT*
+		public RuleCall getINTTerminalRuleCall_11_1() { return cINTTerminalRuleCall_11_1; }
+		
+		//('-' INT)*
+		public Group getGroup_12() { return cGroup_12; }
+		
+		//'-'
+		public Keyword getHyphenMinusKeyword_12_0() { return cHyphenMinusKeyword_12_0; }
+		
+		//INT
+		public RuleCall getINTTerminalRuleCall_12_1() { return cINTTerminalRuleCall_12_1; }
+		
+		//'-' INT* '+' '.'? INT*
+		public Group getGroup_13() { return cGroup_13; }
+		
+		//'-'
+		public Keyword getHyphenMinusKeyword_13_0() { return cHyphenMinusKeyword_13_0; }
+		
+		//INT*
+		public RuleCall getINTTerminalRuleCall_13_1() { return cINTTerminalRuleCall_13_1; }
+		
+		//'+'
+		public Keyword getPlusSignKeyword_13_2() { return cPlusSignKeyword_13_2; }
+		
+		//'.'?
+		public Keyword getFullStopKeyword_13_3() { return cFullStopKeyword_13_3; }
+		
+		//INT*
+		public RuleCall getINTTerminalRuleCall_13_4() { return cINTTerminalRuleCall_13_4; }
+		
+		//'-' INT '-' INT? '.' INT*
+		public Group getGroup_14() { return cGroup_14; }
+		
+		//'-'
+		public Keyword getHyphenMinusKeyword_14_0() { return cHyphenMinusKeyword_14_0; }
+		
+		//INT
+		public RuleCall getINTTerminalRuleCall_14_1() { return cINTTerminalRuleCall_14_1; }
+		
+		//'-'
+		public Keyword getHyphenMinusKeyword_14_2() { return cHyphenMinusKeyword_14_2; }
+		
+		//INT?
+		public RuleCall getINTTerminalRuleCall_14_3() { return cINTTerminalRuleCall_14_3; }
+		
+		//'.'
+		public Keyword getFullStopKeyword_14_4() { return cFullStopKeyword_14_4; }
+		
+		//INT*
+		public RuleCall getINTTerminalRuleCall_14_5() { return cINTTerminalRuleCall_14_5; }
 	}
 	public class AttributionElements extends AbstractParserRuleElementFinder {
 		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.xtext.example.mydsl.T1.Attribution");
@@ -381,7 +459,8 @@ public class T1GrammarAccess extends AbstractGrammarElementFinder {
 	
 	//Value:
 	//	ID | STRING | INT | INT? '.' INT* | INT '+' INT | INT '+' INT? '.' INT* | INT '+' INT* | INT '-' INT | INT '-' INT?
-	//	'.' INT* | INT '-' INT* | INT? '.' INT* '+' INT;
+	//	'.' INT* | INT '-' INT* | INT? '.' INT* '+' INT | '-' INT* | ('-' INT)* | '-' INT* '+' '.'? INT* | '-' INT '-' INT?
+	//	'.' INT*;
 	public ValueElements getValueAccess() {
 		return pValue;
 	}
