@@ -62,12 +62,18 @@ public class T1GrammarAccess extends AbstractGrammarElementFinder {
 		private final RuleCall cINTTerminalRuleCall_4_0 = (RuleCall)cGroup_4.eContents().get(0);
 		private final Keyword cPlusSignKeyword_4_1 = (Keyword)cGroup_4.eContents().get(1);
 		private final RuleCall cINTTerminalRuleCall_4_2 = (RuleCall)cGroup_4.eContents().get(2);
+		private final Group cGroup_5 = (Group)cAlternatives.eContents().get(5);
+		private final RuleCall cINTTerminalRuleCall_5_0 = (RuleCall)cGroup_5.eContents().get(0);
+		private final Keyword cPlusSignKeyword_5_1 = (Keyword)cGroup_5.eContents().get(1);
+		private final RuleCall cINTTerminalRuleCall_5_2 = (RuleCall)cGroup_5.eContents().get(2);
+		private final Keyword cFullStopKeyword_5_3 = (Keyword)cGroup_5.eContents().get(3);
+		private final RuleCall cINTTerminalRuleCall_5_4 = (RuleCall)cGroup_5.eContents().get(4);
 		
 		//Value:
-		//	ID | STRING | INT | INT? '.' INT* | INT '+' INT;
+		//	ID | STRING | INT | INT? '.' INT* | INT '+' INT | INT '+' INT? '.' INT*;
 		@Override public ParserRule getRule() { return rule; }
 		
-		//ID | STRING | INT | INT? '.' INT* | INT '+' INT
+		//ID | STRING | INT | INT? '.' INT* | INT '+' INT | INT '+' INT? '.' INT*
 		public Alternatives getAlternatives() { return cAlternatives; }
 		
 		//ID
@@ -102,6 +108,24 @@ public class T1GrammarAccess extends AbstractGrammarElementFinder {
 		
 		//INT
 		public RuleCall getINTTerminalRuleCall_4_2() { return cINTTerminalRuleCall_4_2; }
+		
+		//INT '+' INT? '.' INT*
+		public Group getGroup_5() { return cGroup_5; }
+		
+		//INT
+		public RuleCall getINTTerminalRuleCall_5_0() { return cINTTerminalRuleCall_5_0; }
+		
+		//'+'
+		public Keyword getPlusSignKeyword_5_1() { return cPlusSignKeyword_5_1; }
+		
+		//INT?
+		public RuleCall getINTTerminalRuleCall_5_2() { return cINTTerminalRuleCall_5_2; }
+		
+		//'.'
+		public Keyword getFullStopKeyword_5_3() { return cFullStopKeyword_5_3; }
+		
+		//INT*
+		public RuleCall getINTTerminalRuleCall_5_4() { return cINTTerminalRuleCall_5_4; }
 	}
 	public class AttributionElements extends AbstractParserRuleElementFinder {
 		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.xtext.example.mydsl.T1.Attribution");
@@ -258,7 +282,7 @@ public class T1GrammarAccess extends AbstractGrammarElementFinder {
 	}
 	
 	//Value:
-	//	ID | STRING | INT | INT? '.' INT* | INT '+' INT;
+	//	ID | STRING | INT | INT? '.' INT* | INT '+' INT | INT '+' INT? '.' INT*;
 	public ValueElements getValueAccess() {
 		return pValue;
 	}

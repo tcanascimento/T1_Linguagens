@@ -27,6 +27,16 @@ class T1ParsingTest {
 		Assert.assertTrue(result.eResource.errors.isEmpty)
 	}
 	
+	@Test
+	def void validaAtribuicaoComSomaFloat() {
+		val result = parseHelper.parse('''
+			var a = 1 + 2.2121;
+		''')
+		Assert.assertNotNull(result)
+		Assert.assertTrue(result.eResource.errors.isEmpty)
+	}
+	
+	
 	
 	@Test
 	def void validaAtribuicaoComum() {

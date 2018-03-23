@@ -180,6 +180,48 @@ ruleValue returns [Boolean current=false]
 				doneLeaf(this_INT_8);
 			}
 		)
+		    |
+		(
+			{
+				markLeaf(elementTypeProvider.getValue_INTTerminalRuleCall_5_0ElementType());
+			}
+			this_INT_9=RULE_INT
+			{
+				doneLeaf(this_INT_9);
+			}
+			{
+				markLeaf(elementTypeProvider.getValue_PlusSignKeyword_5_1ElementType());
+			}
+			kw='+'
+			{
+				doneLeaf(kw);
+			}
+			(
+				{
+					markLeaf(elementTypeProvider.getValue_INTTerminalRuleCall_5_2ElementType());
+				}
+				this_INT_11=RULE_INT
+				{
+					doneLeaf(this_INT_11);
+				}
+			)?
+			{
+				markLeaf(elementTypeProvider.getValue_FullStopKeyword_5_3ElementType());
+			}
+			kw='.'
+			{
+				doneLeaf(kw);
+			}
+			(
+				{
+					markLeaf(elementTypeProvider.getValue_INTTerminalRuleCall_5_4ElementType());
+				}
+				this_INT_13=RULE_INT
+				{
+					doneLeaf(this_INT_13);
+				}
+			)*
+		)
 	)
 ;
 

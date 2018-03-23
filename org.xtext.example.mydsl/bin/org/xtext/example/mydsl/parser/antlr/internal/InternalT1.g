@@ -207,6 +207,44 @@ ruleValue returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()]
 				newLeafNode(this_INT_8, grammarAccess.getValueAccess().getINTTerminalRuleCall_4_2());
 			}
 		)
+		    |
+		(
+			this_INT_9=RULE_INT
+			{
+				$current.merge(this_INT_9);
+			}
+			{
+				newLeafNode(this_INT_9, grammarAccess.getValueAccess().getINTTerminalRuleCall_5_0());
+			}
+			kw='+'
+			{
+				$current.merge(kw);
+				newLeafNode(kw, grammarAccess.getValueAccess().getPlusSignKeyword_5_1());
+			}
+			(
+				this_INT_11=RULE_INT
+				{
+					$current.merge(this_INT_11);
+				}
+				{
+					newLeafNode(this_INT_11, grammarAccess.getValueAccess().getINTTerminalRuleCall_5_2());
+				}
+			)?
+			kw='.'
+			{
+				$current.merge(kw);
+				newLeafNode(kw, grammarAccess.getValueAccess().getFullStopKeyword_5_3());
+			}
+			(
+				this_INT_13=RULE_INT
+				{
+					$current.merge(this_INT_13);
+				}
+				{
+					newLeafNode(this_INT_13, grammarAccess.getValueAccess().getINTTerminalRuleCall_5_4());
+				}
+			)*
+		)
 	)
 ;
 
