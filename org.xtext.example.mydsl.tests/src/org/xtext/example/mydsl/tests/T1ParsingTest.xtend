@@ -19,6 +19,24 @@ class T1ParsingTest {
 	ParseHelper<Model> parseHelper
 	
 	@Test
+	def void validaAtribuicaoComSubtracao() {
+		val result = parseHelper.parse('''
+			var a = 1 - 2;
+		''')
+		Assert.assertNotNull(result)
+		Assert.assertTrue(result.eResource.errors.isEmpty)
+	}
+	
+	@Test
+	def void validaAtribuicaoComSubtracaoFloat() {
+		val result = parseHelper.parse('''
+			var a = 1 - 3.2121;
+		''')
+		Assert.assertNotNull(result)
+		Assert.assertTrue(result.eResource.errors.isEmpty)
+	}
+	
+	@Test
 	def void validaAtribuicaoComSoma() {
 		val result = parseHelper.parse('''
 			var a = 1 + 2;
@@ -36,7 +54,14 @@ class T1ParsingTest {
 		Assert.assertTrue(result.eResource.errors.isEmpty)
 	}
 	
-	
+	@Test
+	def void validaVarFloatSemValorEsquerdaSoma() {
+		val result = parseHelper.parse('''
+			var a = .12312312312 + 111;
+		''')
+		Assert.assertNotNull(result)
+		Assert.assertTrue(result.eResource.errors.isEmpty)
+	}
 	
 	@Test
 	def void validaAtribuicaoComum() {

@@ -68,12 +68,38 @@ public class T1GrammarAccess extends AbstractGrammarElementFinder {
 		private final RuleCall cINTTerminalRuleCall_5_2 = (RuleCall)cGroup_5.eContents().get(2);
 		private final Keyword cFullStopKeyword_5_3 = (Keyword)cGroup_5.eContents().get(3);
 		private final RuleCall cINTTerminalRuleCall_5_4 = (RuleCall)cGroup_5.eContents().get(4);
+		private final Group cGroup_6 = (Group)cAlternatives.eContents().get(6);
+		private final RuleCall cINTTerminalRuleCall_6_0 = (RuleCall)cGroup_6.eContents().get(0);
+		private final Keyword cPlusSignKeyword_6_1 = (Keyword)cGroup_6.eContents().get(1);
+		private final RuleCall cINTTerminalRuleCall_6_2 = (RuleCall)cGroup_6.eContents().get(2);
+		private final Group cGroup_7 = (Group)cAlternatives.eContents().get(7);
+		private final RuleCall cINTTerminalRuleCall_7_0 = (RuleCall)cGroup_7.eContents().get(0);
+		private final Keyword cHyphenMinusKeyword_7_1 = (Keyword)cGroup_7.eContents().get(1);
+		private final RuleCall cINTTerminalRuleCall_7_2 = (RuleCall)cGroup_7.eContents().get(2);
+		private final Group cGroup_8 = (Group)cAlternatives.eContents().get(8);
+		private final RuleCall cINTTerminalRuleCall_8_0 = (RuleCall)cGroup_8.eContents().get(0);
+		private final Keyword cHyphenMinusKeyword_8_1 = (Keyword)cGroup_8.eContents().get(1);
+		private final RuleCall cINTTerminalRuleCall_8_2 = (RuleCall)cGroup_8.eContents().get(2);
+		private final Keyword cFullStopKeyword_8_3 = (Keyword)cGroup_8.eContents().get(3);
+		private final RuleCall cINTTerminalRuleCall_8_4 = (RuleCall)cGroup_8.eContents().get(4);
+		private final Group cGroup_9 = (Group)cAlternatives.eContents().get(9);
+		private final RuleCall cINTTerminalRuleCall_9_0 = (RuleCall)cGroup_9.eContents().get(0);
+		private final Keyword cHyphenMinusKeyword_9_1 = (Keyword)cGroup_9.eContents().get(1);
+		private final RuleCall cINTTerminalRuleCall_9_2 = (RuleCall)cGroup_9.eContents().get(2);
+		private final Group cGroup_10 = (Group)cAlternatives.eContents().get(10);
+		private final RuleCall cINTTerminalRuleCall_10_0 = (RuleCall)cGroup_10.eContents().get(0);
+		private final Keyword cFullStopKeyword_10_1 = (Keyword)cGroup_10.eContents().get(1);
+		private final RuleCall cINTTerminalRuleCall_10_2 = (RuleCall)cGroup_10.eContents().get(2);
+		private final Keyword cPlusSignKeyword_10_3 = (Keyword)cGroup_10.eContents().get(3);
+		private final RuleCall cINTTerminalRuleCall_10_4 = (RuleCall)cGroup_10.eContents().get(4);
 		
 		//Value:
-		//	ID | STRING | INT | INT? '.' INT* | INT '+' INT | INT '+' INT? '.' INT*;
+		//	ID | STRING | INT | INT? '.' INT* | INT '+' INT | INT '+' INT? '.' INT* | INT '+' INT* | INT '-' INT | INT '-' INT?
+		//	'.' INT* | INT '-' INT* | INT? '.' INT* '+' INT;
 		@Override public ParserRule getRule() { return rule; }
 		
-		//ID | STRING | INT | INT? '.' INT* | INT '+' INT | INT '+' INT? '.' INT*
+		//ID | STRING | INT | INT? '.' INT* | INT '+' INT | INT '+' INT? '.' INT* | INT '+' INT* | INT '-' INT | INT '-' INT? '.'
+		//INT* | INT '-' INT* | INT? '.' INT* '+' INT
 		public Alternatives getAlternatives() { return cAlternatives; }
 		
 		//ID
@@ -126,6 +152,78 @@ public class T1GrammarAccess extends AbstractGrammarElementFinder {
 		
 		//INT*
 		public RuleCall getINTTerminalRuleCall_5_4() { return cINTTerminalRuleCall_5_4; }
+		
+		//INT '+' INT*
+		public Group getGroup_6() { return cGroup_6; }
+		
+		//INT
+		public RuleCall getINTTerminalRuleCall_6_0() { return cINTTerminalRuleCall_6_0; }
+		
+		//'+'
+		public Keyword getPlusSignKeyword_6_1() { return cPlusSignKeyword_6_1; }
+		
+		//INT*
+		public RuleCall getINTTerminalRuleCall_6_2() { return cINTTerminalRuleCall_6_2; }
+		
+		//INT '-' INT
+		public Group getGroup_7() { return cGroup_7; }
+		
+		//INT
+		public RuleCall getINTTerminalRuleCall_7_0() { return cINTTerminalRuleCall_7_0; }
+		
+		//'-'
+		public Keyword getHyphenMinusKeyword_7_1() { return cHyphenMinusKeyword_7_1; }
+		
+		//INT
+		public RuleCall getINTTerminalRuleCall_7_2() { return cINTTerminalRuleCall_7_2; }
+		
+		//INT '-' INT? '.' INT*
+		public Group getGroup_8() { return cGroup_8; }
+		
+		//INT
+		public RuleCall getINTTerminalRuleCall_8_0() { return cINTTerminalRuleCall_8_0; }
+		
+		//'-'
+		public Keyword getHyphenMinusKeyword_8_1() { return cHyphenMinusKeyword_8_1; }
+		
+		//INT?
+		public RuleCall getINTTerminalRuleCall_8_2() { return cINTTerminalRuleCall_8_2; }
+		
+		//'.'
+		public Keyword getFullStopKeyword_8_3() { return cFullStopKeyword_8_3; }
+		
+		//INT*
+		public RuleCall getINTTerminalRuleCall_8_4() { return cINTTerminalRuleCall_8_4; }
+		
+		//INT '-' INT*
+		public Group getGroup_9() { return cGroup_9; }
+		
+		//INT
+		public RuleCall getINTTerminalRuleCall_9_0() { return cINTTerminalRuleCall_9_0; }
+		
+		//'-'
+		public Keyword getHyphenMinusKeyword_9_1() { return cHyphenMinusKeyword_9_1; }
+		
+		//INT*
+		public RuleCall getINTTerminalRuleCall_9_2() { return cINTTerminalRuleCall_9_2; }
+		
+		//INT? '.' INT* '+' INT
+		public Group getGroup_10() { return cGroup_10; }
+		
+		//INT?
+		public RuleCall getINTTerminalRuleCall_10_0() { return cINTTerminalRuleCall_10_0; }
+		
+		//'.'
+		public Keyword getFullStopKeyword_10_1() { return cFullStopKeyword_10_1; }
+		
+		//INT*
+		public RuleCall getINTTerminalRuleCall_10_2() { return cINTTerminalRuleCall_10_2; }
+		
+		//'+'
+		public Keyword getPlusSignKeyword_10_3() { return cPlusSignKeyword_10_3; }
+		
+		//INT
+		public RuleCall getINTTerminalRuleCall_10_4() { return cINTTerminalRuleCall_10_4; }
 	}
 	public class AttributionElements extends AbstractParserRuleElementFinder {
 		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.xtext.example.mydsl.T1.Attribution");
@@ -282,7 +380,8 @@ public class T1GrammarAccess extends AbstractGrammarElementFinder {
 	}
 	
 	//Value:
-	//	ID | STRING | INT | INT? '.' INT* | INT '+' INT | INT '+' INT? '.' INT*;
+	//	ID | STRING | INT | INT? '.' INT* | INT '+' INT | INT '+' INT? '.' INT* | INT '+' INT* | INT '-' INT | INT '-' INT?
+	//	'.' INT* | INT '-' INT* | INT? '.' INT* '+' INT;
 	public ValueElements getValueAccess() {
 		return pValue;
 	}

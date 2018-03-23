@@ -245,6 +245,152 @@ ruleValue returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()]
 				}
 			)*
 		)
+		    |
+		(
+			this_INT_14=RULE_INT
+			{
+				$current.merge(this_INT_14);
+			}
+			{
+				newLeafNode(this_INT_14, grammarAccess.getValueAccess().getINTTerminalRuleCall_6_0());
+			}
+			kw='+'
+			{
+				$current.merge(kw);
+				newLeafNode(kw, grammarAccess.getValueAccess().getPlusSignKeyword_6_1());
+			}
+			(
+				this_INT_16=RULE_INT
+				{
+					$current.merge(this_INT_16);
+				}
+				{
+					newLeafNode(this_INT_16, grammarAccess.getValueAccess().getINTTerminalRuleCall_6_2());
+				}
+			)*
+		)
+		    |
+		(
+			this_INT_17=RULE_INT
+			{
+				$current.merge(this_INT_17);
+			}
+			{
+				newLeafNode(this_INT_17, grammarAccess.getValueAccess().getINTTerminalRuleCall_7_0());
+			}
+			kw='-'
+			{
+				$current.merge(kw);
+				newLeafNode(kw, grammarAccess.getValueAccess().getHyphenMinusKeyword_7_1());
+			}
+			this_INT_19=RULE_INT
+			{
+				$current.merge(this_INT_19);
+			}
+			{
+				newLeafNode(this_INT_19, grammarAccess.getValueAccess().getINTTerminalRuleCall_7_2());
+			}
+		)
+		    |
+		(
+			this_INT_20=RULE_INT
+			{
+				$current.merge(this_INT_20);
+			}
+			{
+				newLeafNode(this_INT_20, grammarAccess.getValueAccess().getINTTerminalRuleCall_8_0());
+			}
+			kw='-'
+			{
+				$current.merge(kw);
+				newLeafNode(kw, grammarAccess.getValueAccess().getHyphenMinusKeyword_8_1());
+			}
+			(
+				this_INT_22=RULE_INT
+				{
+					$current.merge(this_INT_22);
+				}
+				{
+					newLeafNode(this_INT_22, grammarAccess.getValueAccess().getINTTerminalRuleCall_8_2());
+				}
+			)?
+			kw='.'
+			{
+				$current.merge(kw);
+				newLeafNode(kw, grammarAccess.getValueAccess().getFullStopKeyword_8_3());
+			}
+			(
+				this_INT_24=RULE_INT
+				{
+					$current.merge(this_INT_24);
+				}
+				{
+					newLeafNode(this_INT_24, grammarAccess.getValueAccess().getINTTerminalRuleCall_8_4());
+				}
+			)*
+		)
+		    |
+		(
+			this_INT_25=RULE_INT
+			{
+				$current.merge(this_INT_25);
+			}
+			{
+				newLeafNode(this_INT_25, grammarAccess.getValueAccess().getINTTerminalRuleCall_9_0());
+			}
+			kw='-'
+			{
+				$current.merge(kw);
+				newLeafNode(kw, grammarAccess.getValueAccess().getHyphenMinusKeyword_9_1());
+			}
+			(
+				this_INT_27=RULE_INT
+				{
+					$current.merge(this_INT_27);
+				}
+				{
+					newLeafNode(this_INT_27, grammarAccess.getValueAccess().getINTTerminalRuleCall_9_2());
+				}
+			)*
+		)
+		    |
+		(
+			(
+				this_INT_28=RULE_INT
+				{
+					$current.merge(this_INT_28);
+				}
+				{
+					newLeafNode(this_INT_28, grammarAccess.getValueAccess().getINTTerminalRuleCall_10_0());
+				}
+			)?
+			kw='.'
+			{
+				$current.merge(kw);
+				newLeafNode(kw, grammarAccess.getValueAccess().getFullStopKeyword_10_1());
+			}
+			(
+				this_INT_30=RULE_INT
+				{
+					$current.merge(this_INT_30);
+				}
+				{
+					newLeafNode(this_INT_30, grammarAccess.getValueAccess().getINTTerminalRuleCall_10_2());
+				}
+			)*
+			kw='+'
+			{
+				$current.merge(kw);
+				newLeafNode(kw, grammarAccess.getValueAccess().getPlusSignKeyword_10_3());
+			}
+			this_INT_32=RULE_INT
+			{
+				$current.merge(this_INT_32);
+			}
+			{
+				newLeafNode(this_INT_32, grammarAccess.getValueAccess().getINTTerminalRuleCall_10_4());
+			}
+		)
 	)
 ;
 

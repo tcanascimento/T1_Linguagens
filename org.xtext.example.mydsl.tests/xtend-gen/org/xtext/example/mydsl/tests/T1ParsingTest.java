@@ -23,6 +23,34 @@ public class T1ParsingTest {
   private ParseHelper<Model> parseHelper;
   
   @Test
+  public void validaAtribuicaoComSubtracao() {
+    try {
+      StringConcatenation _builder = new StringConcatenation();
+      _builder.append("var a = 1 - 2;");
+      _builder.newLine();
+      final Model result = this.parseHelper.parse(_builder);
+      Assert.assertNotNull(result);
+      Assert.assertTrue(result.eResource().getErrors().isEmpty());
+    } catch (Throwable _e) {
+      throw Exceptions.sneakyThrow(_e);
+    }
+  }
+  
+  @Test
+  public void validaAtribuicaoComSubtracaoFloat() {
+    try {
+      StringConcatenation _builder = new StringConcatenation();
+      _builder.append("var a = 1 - 3.2121;");
+      _builder.newLine();
+      final Model result = this.parseHelper.parse(_builder);
+      Assert.assertNotNull(result);
+      Assert.assertTrue(result.eResource().getErrors().isEmpty());
+    } catch (Throwable _e) {
+      throw Exceptions.sneakyThrow(_e);
+    }
+  }
+  
+  @Test
   public void validaAtribuicaoComSoma() {
     try {
       StringConcatenation _builder = new StringConcatenation();
@@ -41,6 +69,20 @@ public class T1ParsingTest {
     try {
       StringConcatenation _builder = new StringConcatenation();
       _builder.append("var a = 1 + 2.2121;");
+      _builder.newLine();
+      final Model result = this.parseHelper.parse(_builder);
+      Assert.assertNotNull(result);
+      Assert.assertTrue(result.eResource().getErrors().isEmpty());
+    } catch (Throwable _e) {
+      throw Exceptions.sneakyThrow(_e);
+    }
+  }
+  
+  @Test
+  public void validaVarFloatSemValorEsquerdaSoma() {
+    try {
+      StringConcatenation _builder = new StringConcatenation();
+      _builder.append("var a = .12312312312 + 111;");
       _builder.newLine();
       final Model result = this.parseHelper.parse(_builder);
       Assert.assertNotNull(result);
