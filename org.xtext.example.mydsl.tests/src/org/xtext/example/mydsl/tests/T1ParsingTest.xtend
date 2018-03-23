@@ -19,6 +19,16 @@ class T1ParsingTest {
 	ParseHelper<Model> parseHelper
 	
 	@Test
+	def void validaAtribuicaoComSoma() {
+		val result = parseHelper.parse('''
+			var a = 1 + 2;
+		''')
+		Assert.assertNotNull(result)
+		Assert.assertTrue(result.eResource.errors.isEmpty)
+	}
+	
+	
+	@Test
 	def void validaAtribuicaoComum() {
 		val result = parseHelper.parse('''
 			var a = b;

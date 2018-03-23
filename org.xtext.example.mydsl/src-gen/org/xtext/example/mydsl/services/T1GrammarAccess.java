@@ -58,12 +58,16 @@ public class T1GrammarAccess extends AbstractGrammarElementFinder {
 		private final RuleCall cINTTerminalRuleCall_3_0 = (RuleCall)cGroup_3.eContents().get(0);
 		private final Keyword cFullStopKeyword_3_1 = (Keyword)cGroup_3.eContents().get(1);
 		private final RuleCall cINTTerminalRuleCall_3_2 = (RuleCall)cGroup_3.eContents().get(2);
+		private final Group cGroup_4 = (Group)cAlternatives.eContents().get(4);
+		private final RuleCall cINTTerminalRuleCall_4_0 = (RuleCall)cGroup_4.eContents().get(0);
+		private final Keyword cPlusSignKeyword_4_1 = (Keyword)cGroup_4.eContents().get(1);
+		private final RuleCall cINTTerminalRuleCall_4_2 = (RuleCall)cGroup_4.eContents().get(2);
 		
 		//Value:
-		//	ID | STRING | INT | INT? '.' INT*;
+		//	ID | STRING | INT | INT? '.' INT* | INT '+' INT;
 		@Override public ParserRule getRule() { return rule; }
 		
-		//ID | STRING | INT | INT? '.' INT*
+		//ID | STRING | INT | INT? '.' INT* | INT '+' INT
 		public Alternatives getAlternatives() { return cAlternatives; }
 		
 		//ID
@@ -86,6 +90,18 @@ public class T1GrammarAccess extends AbstractGrammarElementFinder {
 		
 		//INT*
 		public RuleCall getINTTerminalRuleCall_3_2() { return cINTTerminalRuleCall_3_2; }
+		
+		//INT '+' INT
+		public Group getGroup_4() { return cGroup_4; }
+		
+		//INT
+		public RuleCall getINTTerminalRuleCall_4_0() { return cINTTerminalRuleCall_4_0; }
+		
+		//'+'
+		public Keyword getPlusSignKeyword_4_1() { return cPlusSignKeyword_4_1; }
+		
+		//INT
+		public RuleCall getINTTerminalRuleCall_4_2() { return cINTTerminalRuleCall_4_2; }
 	}
 	public class AttributionElements extends AbstractParserRuleElementFinder {
 		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.xtext.example.mydsl.T1.Attribution");
@@ -242,7 +258,7 @@ public class T1GrammarAccess extends AbstractGrammarElementFinder {
 	}
 	
 	//Value:
-	//	ID | STRING | INT | INT? '.' INT*;
+	//	ID | STRING | INT | INT? '.' INT* | INT '+' INT;
 	public ValueElements getValueAccess() {
 		return pValue;
 	}

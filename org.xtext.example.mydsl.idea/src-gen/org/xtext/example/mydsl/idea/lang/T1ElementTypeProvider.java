@@ -86,6 +86,18 @@ public class T1ElementTypeProvider implements IElementTypeProvider {
 		public static IGrammarAwareElementType createValue_INTTerminalRuleCall_3_2ElementType() {
 			return new IGrammarAwareElementType("Value_INTTerminalRuleCall_3_2_ELEMENT_TYPE", T1Language.INSTANCE, GRAMMAR_ACCESS.getValueAccess().getINTTerminalRuleCall_3_2());
 		}
+		public static IGrammarAwareElementType createValue_Group_4ElementType() {
+			return new IGrammarAwareElementType("Value_Group_4_ELEMENT_TYPE", T1Language.INSTANCE, GRAMMAR_ACCESS.getValueAccess().getGroup_4());
+		}
+		public static IGrammarAwareElementType createValue_INTTerminalRuleCall_4_0ElementType() {
+			return new IGrammarAwareElementType("Value_INTTerminalRuleCall_4_0_ELEMENT_TYPE", T1Language.INSTANCE, GRAMMAR_ACCESS.getValueAccess().getINTTerminalRuleCall_4_0());
+		}
+		public static IGrammarAwareElementType createValue_PlusSignKeyword_4_1ElementType() {
+			return new IGrammarAwareElementType("Value_PlusSignKeyword_4_1_ELEMENT_TYPE", T1Language.INSTANCE, GRAMMAR_ACCESS.getValueAccess().getPlusSignKeyword_4_1());
+		}
+		public static IGrammarAwareElementType createValue_INTTerminalRuleCall_4_2ElementType() {
+			return new IGrammarAwareElementType("Value_INTTerminalRuleCall_4_2_ELEMENT_TYPE", T1Language.INSTANCE, GRAMMAR_ACCESS.getValueAccess().getINTTerminalRuleCall_4_2());
+		}
 	}
 
 	public static final IGrammarAwareElementType Value_ELEMENT_TYPE = associate(ValueFactory.createValueElementType());
@@ -105,6 +117,14 @@ public class T1ElementTypeProvider implements IElementTypeProvider {
 	public static final IGrammarAwareElementType Value_FullStopKeyword_3_1_ELEMENT_TYPE = associate(ValueFactory.createValue_FullStopKeyword_3_1ElementType());
 
 	public static final IGrammarAwareElementType Value_INTTerminalRuleCall_3_2_ELEMENT_TYPE = associate(ValueFactory.createValue_INTTerminalRuleCall_3_2ElementType());
+
+	public static final IGrammarAwareElementType Value_Group_4_ELEMENT_TYPE = associate(ValueFactory.createValue_Group_4ElementType());
+
+	public static final IGrammarAwareElementType Value_INTTerminalRuleCall_4_0_ELEMENT_TYPE = associate(ValueFactory.createValue_INTTerminalRuleCall_4_0ElementType());
+
+	public static final IGrammarAwareElementType Value_PlusSignKeyword_4_1_ELEMENT_TYPE = associate(ValueFactory.createValue_PlusSignKeyword_4_1ElementType());
+
+	public static final IGrammarAwareElementType Value_INTTerminalRuleCall_4_2_ELEMENT_TYPE = associate(ValueFactory.createValue_INTTerminalRuleCall_4_2ElementType());
 
 	private static class AttributionFactory {
 		public static IGrammarAwareElementType createAttributionElementType() {
@@ -269,6 +289,22 @@ public class T1ElementTypeProvider implements IElementTypeProvider {
 	
 	public IGrammarAwareElementType getValue_INTTerminalRuleCall_3_2ElementType() {
 		return Value_INTTerminalRuleCall_3_2_ELEMENT_TYPE;
+	}
+	
+	public IGrammarAwareElementType getValue_Group_4ElementType() {
+		return Value_Group_4_ELEMENT_TYPE;
+	}
+	
+	public IGrammarAwareElementType getValue_INTTerminalRuleCall_4_0ElementType() {
+		return Value_INTTerminalRuleCall_4_0_ELEMENT_TYPE;
+	}
+	
+	public IGrammarAwareElementType getValue_PlusSignKeyword_4_1ElementType() {
+		return Value_PlusSignKeyword_4_1_ELEMENT_TYPE;
+	}
+	
+	public IGrammarAwareElementType getValue_INTTerminalRuleCall_4_2ElementType() {
+		return Value_INTTerminalRuleCall_4_2_ELEMENT_TYPE;
 	}
 	
 	public IGrammarAwareElementType getAttributionElementType() {

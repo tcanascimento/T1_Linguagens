@@ -156,6 +156,30 @@ ruleValue returns [Boolean current=false]
 				}
 			)*
 		)
+		    |
+		(
+			{
+				markLeaf(elementTypeProvider.getValue_INTTerminalRuleCall_4_0ElementType());
+			}
+			this_INT_6=RULE_INT
+			{
+				doneLeaf(this_INT_6);
+			}
+			{
+				markLeaf(elementTypeProvider.getValue_PlusSignKeyword_4_1ElementType());
+			}
+			kw='+'
+			{
+				doneLeaf(kw);
+			}
+			{
+				markLeaf(elementTypeProvider.getValue_INTTerminalRuleCall_4_2ElementType());
+			}
+			this_INT_8=RULE_INT
+			{
+				doneLeaf(this_INT_8);
+			}
+		)
 	)
 ;
 

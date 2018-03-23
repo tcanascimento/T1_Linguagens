@@ -10,7 +10,7 @@ Name:
 ;
 
 Value:
-	ID | STRING | INT| INT? '.' INT*
+	ID | STRING | INT| INT? '.' INT* |  INT '+' INT 
 ;
 
 Attribution:
