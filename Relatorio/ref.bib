@@ -1,13 +1,35 @@
-@misc{waldron_2018, 
+\RequirePackage{filecontents}
+\begin{filecontents}{ref.bib}
+@misc{kinaSUR,
+    author = "{Ministry for Primary Industries}",
+    title = {{Kina sea urchin regions in NZ}},
+    howpublished = {\url{http://fs.fish.govt.nz/Page.aspx?pk=7&sc=SUR}},
+    note = {Online; accessed 29 January 2014} ,
+    year=2013,
+}
+@misc{waldron_2018,
 	title={var},
 	 url={https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var}, 
 	journal={MDN Web Docs}, 
 	publisher={MDN Web Docs}, 
 	author={Waldron, Rick}, 
 	year={2018},
-	 month={Mar}}
-@misc{efftinge_spoenemann, 
+	 month={Mar}
+}
+@misc{efftinge_spoenemann,
 	title={Why Xtext?}, 
 	url={http://www.eclipse.org/Xtext/},
 	 journal={Xtext - Language Engineering Made Easy!}, 
-	 author={Efftinge, Sven and Spoenemann, Miro}}
+	 author={Efftinge, Sven and Spoenemann, Miro}
+}
+\end{filecontents}
+\documentclass{report}
+\usepackage{natbib}
+\usepackage{url}
+
+\begin{document}
+\cite{kinaSUR}
+
+\bibliographystyle{otago} 
+\bibliography{\jobname}
+\end{document}

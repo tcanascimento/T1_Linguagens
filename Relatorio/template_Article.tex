@@ -40,7 +40,7 @@ O presente trabalho visa demonstrar uma implementação de um validador de sinta
 
 \section{Regras para utilização do comando \textbf{var} em \textit{JavaScript}}
 
-As regras prescritas par ao uso do comando \textbf{var} em \textit{Java Script} de acordo com \cite{} são:
+As regras prescritas par ao uso do comando \textbf{var} em \textit{Java Script} de acordo com \cite{waldron_2018} envolvem basicamente em não aceitar caracteres especiais ou números como o primeiro caracter do nome da variável. São permitidos atribuíções compostas de variáveis, caracteres especiais a partir do segundo caracter, atribuições sem valor e o uso opcional de ' ;'.
 \section{Desenvolvimento: nosso validador de sintaxe}
 
 \begin{lstlisting}[language = java]
@@ -161,9 +161,7 @@ Assert.assertTrue(result.eResource.errors.isEmpty)
 
 @Test
 def void validaVarAspasSimples() {
-val result = parseHelper.parse('''
-var a = '123**&ˆ';
-''')
+val result = parseHelper.parse('''var a = '123**^';''') '
 Assert.assertNotNull(result)
 Assert.assertTrue(result.eResource.errors.isEmpty)
 }
@@ -259,5 +257,23 @@ Assert.assertNotNull(result)
 Assert.assertFalse(result.eResource.errors.isEmpty)
 }
 \end{lstlisting}
-\bibliography{ref.bib}
+
+\begin{thebibliography}{9}
+ 
+\bibitem{efftinge_spoenemann} 
+Efftinge, Sven and Spoenemann, Miro. 
+\textbf{Why Xtext?}. 
+\\\texttt{http://www.eclipse.org/Xtext/}
+ 
+\bibitem{waldron_2018} 
+Waldron, Rick.
+\textbf{var} - JavaScript | MDN.
+\\\texttt{https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var}
+
+\bibitem{git_projeto}
+GIT.
+\\\texttt{https://github.com/tcanascimento/T1\_Linguagens.git}
+\end{thebibliography}
+
 \end{document}
+
